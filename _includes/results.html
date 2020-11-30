@@ -1,0 +1,46 @@
+<style>
+model-viewer {
+  width: 1000px;
+  height: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
+<section class="hero is-fullheight has-text-centered " id="about">
+    <div class="hero-body">
+      <div class="container">
+          <h2 align="centered" class="title">RESULTS</h2>
+          <br>
+          <br>
+            <img src="assets/matter.jpg" loop=infinite  height="1600" width="850" />
+            <br>
+            <br>
+
+
+
+
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+        <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+
+        <!-- Use it like any other HTML element -->
+        <model-viewer align="centered" id="toggle-model" src="assets/RGB.glb" alt="A 3D model of a shishkebab" shadow-intensity="1" camera-controls auto-rotate></model-viewer>
+<script>
+    const models = ['RGB.glb', 'COL.glb', 'CONF.glb'];
+    const toggleModel = document.querySelector('#toggle-model');
+    let j = 0;
+    setInterval(() => toggleModel.setAttribute('src', `assets/${models[j++ % 3]}`), 5000);
+</script>
+<p>
+   Matterport 3D dataset.  RGB mesh, results obtained with our tool, Uncertainty map by multiuser integration.
+</p>
+  <br>
+  <br>
+  <img src="assets/zoom.jpg" loop=infinite  height="1600" width="850" />
+  <p>
+     Results on the KITTI dataset
+  </p>
+
+      </div>
+    </div>
+  </section>

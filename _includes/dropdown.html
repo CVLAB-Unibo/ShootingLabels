@@ -1,0 +1,16 @@
+<div class="navbar-item has-dropdown is-hoverable">
+    <a class="navbar-link">
+        DOWNLOAD
+    </a>
+    <div class="navbar-dropdown has-background-black is-left">
+        {% unless sitepage.url == '/' or sitepage.url == '/404'  or sitepage.url == '/blog' %}
+        <a class="navbar-item has-text-grey-light" href="https://github.com/pierlui92/Shooting-Labels">CODE</a>
+        <a class="navbar-item has-text-grey-light" href="https://mega.nz/file/pAx20A4D#BUKEhXEPMlbW-iA1BkX4sNA9QqVz4FwPCZqf6VFcaT8">EXAMPLE DATA</a>
+        {% endunless %}
+
+        <!-- <hr class="navbar-divider">
+    <a class="navbar-item">
+      Report an issue
+    </a> -->
+    </div>
+</div>

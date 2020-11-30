@@ -1,0 +1,98 @@
+# WhatATheme
+markdown: kramdown
+
+# URL of the Site
+url: ''
+# Base URL of the Site (i.e., Name of the Repository in which the Site is hosted)
+baseurl:
+
+# Title of the Site
+title: Shooting Labels
+# Description of the Site
+description: 3D Semantic Labeling by Virtual Reality
+# URL of Image of the Site
+site-image:
+# Keywords of the Site
+site-keywords: Site, Template, Theme
+# URL for the Image of custom Favicon
+favicon-url:
+
+# URL of the Image of Custom Hero Image (i.e., the image in the background of the very first section
+heroimage: https://raw.githubusercontent.com/pierlui92/ShootingLabels/software-update/Readme/macchia.jpg?token=ANQCMXR72PFLGNZS4UMXQJS7ZZNSI
+
+# Social Media and Contact
+# If you don't want to use any icon, you can leave them blank.
+email:
+facebook_username:
+twitter_username:
+instagram_username:
+linkedin_username:
+github_username:  pierlui92/Shooting-Labels
+youtube_channel_id: UCLVxyScNixgZ3D-Yxt_pevg
+reddit_username:
+behance_username:
+dribbble_username:
+spotify_username:
+site_name: "https://www.vision.deis.unibo.it/"
+
+# Google Analytics
+google-analytics:
+
+# Disqus
+disqus-shortname: ShootingLabels
+
+# Name of the Author
+author-name: ShootingLabels
+# URL for the Image of the Author
+author-image:
+# 60 Words About the Author
+author-about: Shooting labels is the newest labeling tool developed by the CVLab of the University of Bologna. With this powerful tool it is possible to make the labeling process faster and funnier, like playing a videogame. On this site you can find everything you need to know in order to use this software.
+# URL to the Author's Profile (i.e., Github, Twitter, Stackoverflow, etc)
+author-url:
+
+# SASS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Build settings
+plugins:
+  - jekyll-admin
+  - jekyll-feed
+
+# Permalink
+permalink: "blog/:title"
+
+# Compress
+compress_html:
+  clippings: all
+
+# Defaults
+defaults:
+  -
+    scope:
+      type: 'posts'
+    values:
+      layout: post
+      post-image: ""
+      description: ""
+      tags:
+        - ""
+  -
+    scope:
+      type: 'pages'
+    values:
+      layout: page
+
+# Exclude
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
