@@ -1,17 +1,30 @@
 <style>
 
-  .responsive {
-  max-width: 100%;
-  max-height: 100%;
-}
+  .rwd-video {
+      height: 0;
+      overflow: hidden;
+      padding-bottom: 56.25%;
+      padding-top: 30px;
+      position: relative;
+  }
+  .rwd-video iframe,
+  .rwd-video object,
+  .rwd-video embed {
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+  }
   </style>
 
 <section class=" has-text-centered  has-background-white-ter" id="about">
     <div class="hero-body">
         <div class="container">
-          <iframe  class="responsive" width="1200" height="600"
-    src="https://www.youtube.com/embed/96vsTui8ZLg">
-    </iframe>
+          <div class="rwd-video">
+          <iframe src="https://www.youtube.com/embed/96vsTui8ZLg" allowfullscreen="" frameborder="0" height="315" width="560">
+          </iframe>
+      </div>
           <div class="columns">
                 <div class="column has-text-left-desktop has-text-left-tablet has-text-left-fullhd has-text-left-widescreen">
                     <br>
@@ -20,12 +33,12 @@
                         <div>
                             <a href="{{site.url}}{{site.baseurl}}/#contact"
                                 class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined">find us</a>
-                            </a>
+
                         </div>
                         <div>
                             <a href="https://arxiv.org/abs/1910.05021"
                                 class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined">paper</a>
-                            </a>
+
                         </div>
                     </div>
                 </div>
