@@ -5,6 +5,11 @@ model-viewer {
   margin-left: auto;
   margin-right: auto;
 }
+    .responsive {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 </style>
 
 <section class="hero is-fullheight has-text-centered " id="about">
@@ -24,7 +29,7 @@ model-viewer {
         <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 
         <!-- Use it like any other HTML element -->
-        <model-viewer align="centered" id="toggle-model" src="assets/RGB.glb" alt="A 3D model of a shishkebab" shadow-intensity="1" camera-controls auto-rotate></model-viewer>
+        <model-viewer align="centered" id="toggle-model" class="responsive"  src="assets/RGB.glb" alt="A 3D model of a shishkebab" shadow-intensity="1" camera-controls auto-rotate></model-viewer>
 <script>
     const models = ['RGB.glb', 'COL.glb', 'CONF.glb'];
     const toggleModel = document.querySelector('#toggle-model');
